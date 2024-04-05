@@ -1,5 +1,5 @@
 createDotNetProj() {
+	rm -rf $(pwd)/.devcontainer
 	mkdir .devcontainer
-	touch .devcontainer/test.txt
-	echo "This is a test" > .devcontainer/test.txt
+	cp ~/.dotfiles/.devcontainer/dotnetContainer.json $(pwd)/.devcontainer/devcontainer.json
 }
